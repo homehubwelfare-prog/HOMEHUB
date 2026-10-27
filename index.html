@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HOMEHUB helps compare homes, locality information, budgets and commute distances across India.">
+  <title>HOMEHUB — Know Your Home Before You Choose It</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-icon">⌂</span><span>HOME<span class="brand-accent">HUB</span><small>Find better. Live safer.</small></span></a>
+<nav><a href="#homes">Explore homes</a><a href="#how">How it works</a><a href="#safety">Trust & safety</a></nav><a class="admin-link" href="admin.html">Manage demo listings ↗</a></header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">PROPERTY · PEOPLE · LOCALITY · TRUST</span><h1>Don't just find a home.<br><em>Know your home</em><br>before you choose it.</h1><p>Explore homes across India, compare rent and buying options, understand the neighbourhood and estimate your commute — all in one place.</p><div class="hero-actions"><a class="btn btn-primary" href="#homes">Explore homes <span>→</span></a><a class="btn btn-light" href="#how">How HOMEHUB works</a></div><div class="hero-proof"><span>✓ Budget-first search</span><span>✓ Locality context</span><span>✓ Distance estimates</span></div></div>
+<div class="hero-visual"><div class="hero-image"></div><div class="floating-card"><span class="float-icon">⌖</span><div><b>More than a listing</b><small>Home + locality + commute</small></div><span class="float-check">✓</span></div><div class="hero-stats"><div><b>20</b><small>sample homes</small></div><div><b>All India</b><small>multiple cities</small></div><div><b>₹0</b><small>to explore demo</small></div></div></div></section>
+<section class="search-panel" id="homes"><div class="search-heading"><div><span class="eyebrow">FIND YOUR FIT</span><h2>Your next chapter starts here.</h2></div><span class="demo-pill">DEMO LISTINGS</span></div>
+<div class="filters">
+<label>I'm looking to<select id="modeFilter"><option value="All">Rent or buy</option><option value="Rent">Rent</option><option value="Buy">Buy</option></select></label>
+<label>City or state<input id="locationFilter" placeholder="e.g. Pune, Delhi, Kerala"></label>
+<label>Max budget (₹)<input id="budgetFilter" type="number" min="0" placeholder="e.g. 20000"></label>
+<label>Bedrooms<select id="bedFilter"><option value="0">Any</option><option value="1">1+ BHK</option><option value="2">2+ BHK</option><option value="3">3+ BHK</option></select></label>
+<button class="btn btn-primary search-btn" id="searchBtn">Search homes ↗</button>
+</div><div class="results-bar"><p id="resultCount">Showing 20 sample homes across India</p><div class="sort-controls"><label for="sortFilter">Sort by</label><select id="sortFilter"><option value="recommended">Recommended</option><option value="budget">Budget: low to high</option><option value="area">Area: low to high</option></select><button class="text-button" id="resetBtn">Reset filters</button></div></div>
+<div class="home-grid" id="homeGrid"></div><div id="emptyState" class="empty-state" hidden><h3>No homes match those filters</h3><p>Try a wider budget or another city.</p></div></section>
+<section class="locality-section"><div class="section-intro"><span class="eyebrow">THE BIGGER PICTURE</span><h2>Know the neighbourhood,<br><em>not just the four walls.</em></h2><p>Distance estimates, nearby essentials and local context help you compare homes before arranging a visit.</p></div><div class="locality-cards"><article><span class="feature-icon">⌖</span><h3>Commute distance</h3><p>Use your device location to estimate straight-line distance to a listing, or open directions in Google Maps.</p></article><article><span class="feature-icon">⌂</span><h3>Locality context</h3><p>See each sample home's area and practical notes about shops, transit and everyday services.</p></article><article><span class="feature-icon">⇄</span><h3>Compare with clarity</h3><p>Compare rent or buying prices, bedrooms, bathrooms and area before shortlisting.</p></article></div></section>
+<section class="safety-section" id="safety"><div class="safety-copy"><span class="eyebrow">TRUST IS A PRODUCT LAYER</span><h2>A home should feel right.<br><em>And be checked right.</em></h2><p>HOMEHUB's vision includes ownership-document checks, people verification, locality feedback, digital records and safety reporting.</p><ul><li>Property document and ownership verification</li><li>Owner and tenant verification mechanisms</li><li>Locality reviews and complaint process</li><li>Emergency SOS and location sharing roadmap</li></ul><p class="notice"><b>Important:</b> this prototype does not verify listings, people, safety or legal documents. Do not make payments based on demo content.</p></div><div class="safety-art"><div class="shield">✓</div><div class="safety-mini"><b>Verify before you decide</b><span>Property · People · Locality</span><div class="mini-bars"><i></i><i></i><i></i></div></div></div></section>
+<section class="steps-section" id="how"><span class="eyebrow">A BETTER HOUSING JOURNEY</span><h2>From search to a confident decision.</h2><div class="steps"><article><b>01</b><h3>Discover</h3><p>Filter homes by budget, location and rent/buy.</p></article><article><b>02</b><h3>Understand</h3><p>Review area notes and estimate distance.</p></article><article><b>03</b><h3>Compare</h3><p>Shortlist options side by side.</p></article><article><b>04</b><h3>Verify</h3><p>Confirm documents, owner identity and property in person.</p></article></div></section>
+<section class="cta"><div><span class="eyebrow">YOUR HOME, YOUR DECISION</span><h2>Find a place that fits your life.</h2><p>Start with the budget. Stay for the confidence.</p></div><a href="#homes" class="btn btn-white">Browse sample homes →</a></section>
+</main><footer><a class="brand footer-brand" href="#"><span class="brand-icon">⌂</span><span>HOME<span class="brand-accent">HUB</span><small>Know your home before you choose it.</small></span></a><p>© 2026 HOMEHUB Demo · Sample data for prototype only</p><div><a href="admin.html">Listing manager</a><a href="#safety">Safety notes</a></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="properties.js"></script><script src="app.js"></script>
+</body></html>
